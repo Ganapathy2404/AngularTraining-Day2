@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM event with this</title>
+</head>
+<body>
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+    function changeText(id) {
+        id.innerHTML = "this is a new text!";
+    }
+</script>
+</body>
+</html>

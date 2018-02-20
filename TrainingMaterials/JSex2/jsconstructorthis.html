@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>usage of this</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    function person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+
+    var myFather = new person("Mohan", "Kumar", 50, "blue");
+    var myMother = new person("Leela", "Kumar", 48, "green");
+
+    document.getElementById("demo").innerHTML =
+        "My father is " + myFather.age + ". My mother is " + myMother.age;
+</script>
+
+</body>
+</html>

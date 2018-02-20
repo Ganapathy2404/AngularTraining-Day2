@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this function object</title>
+</head>
+<body>
+ <p> myobj.fullname retrunes the actual name</p>
+ <p id="demo"></p>
+
+<script>
+
+    var myObj= {
+        fName: "vidhya",
+        lName: "Senthil",
+        fullName:function() {
+            return this.fName + " " + this.lName;
+        }
+    }
+          document.getElementById("demo").innerHTML=myObj.fullName();
+
+</script>
+
+</body>
+</html>
