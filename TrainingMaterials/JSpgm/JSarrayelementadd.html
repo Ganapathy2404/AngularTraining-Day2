@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To push elements in array</title>
+    </head>
+<body>
+<button onclick="myfun()">try it </button>
+<p id="demo"></p>
+<script>
+var fruits = ["Grapes","apple","Orange","guava"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myfun(){
+    fruits.push("lemon");
+    document.getElementById("demo").innerHTML=fruits;
+
+}
+
+</script>
+</body>
+</html>
